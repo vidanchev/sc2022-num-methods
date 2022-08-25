@@ -36,8 +36,6 @@ def parse_orbit_data( filename ):
     
     return time, pos, vel
 
-
-
 if __name__ == "__main__":
 
     # File simulated from GMAT

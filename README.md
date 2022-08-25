@@ -7,17 +7,17 @@ The workshop is meant to be conducted as 2 sessions per ~2.5 hours with the foll
   - what do DEs describe and how do they look 
   - what is the difference between continuus and discrete systems and how do we solve DEs with computers
   - the simplest concept of solving ODE: Euler method
-  - writing an Euler integrator for a simple harmonic oscillator problem
 - **Session 2**: Hands-on solving of an oscillator:
-  - extending to an intermediate term - the Verlet Method, comparing results with Euler
+  - writing an Euler integrator for a simple harmonic oscillator problem
+  - plotting the Euler integrator solution vs. the real solution
+  - extending to an intermediate term - the Verlet Method, comparing results with Euler (HW)
+- **Session 3**: Extending 1D oscillator to 2D projectile motion
   - going full throttle - RK(4) method, comparing with Verlet and Euler
-  - introducing the more complex right-hand side for orbital propagator - dimensionless quantities
-  - how would you approach the 3D problem of orbital propagation - HW
-- **Session 3**: Extending 1D oscillator to 3D orbital propagator
-  - handling multiple dimensions in the RHS function
-  - using the right structures to make it easy for the integration
-  - writing the full thing and checking for trivial errors (does it run)
+  - introducing the more complex right-hand side for orbital propagator or ballistic trajectory - dimensionless quantities
 - **Session 4**: Comparing the results of our propagator with the GMAT/STK one
+  - handling multiple dimensions in the RHS function
+  - writing a Verlet and RK(4) method integration for 2D ballistic trajectory (with drag)
+  - how would you approach the 3D problem of orbital propagation - HW to prepare it
 
 ## Files Included
 - **README.md** the readme file
@@ -26,7 +26,3 @@ The workshop is meant to be conducted as 2 sessions per ~2.5 hours with the foll
 - **Plotter.py** has a parser for reading the results and different plotting functions for the various files we're going to be exporting from the solvers
 - **Satellite_PVT_GMAT.csv** is the .csv file with solution after propagating the trajectory for 1 day with GMAT/STK with higher order integrator and higher J terms in the potential - we wll be comparing to this file
 - **Satellite_PVT_WS.csv** is the .csv file with the solution after propagating the trajectory for 1 day with the RK4 propagator and only Newtonian term
-
-## Problems after WS1:
-
-## Problems after WS2:
